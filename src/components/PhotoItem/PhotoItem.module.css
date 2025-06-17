@@ -1,0 +1,6 @@
+.item {
+    width: 473px;
+    height: 440px;
+    border-radius: 8px;
+    object-fit: cover;
+}
