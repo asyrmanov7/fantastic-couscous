@@ -8,7 +8,7 @@ export const PhotoItem = ({ photo }) => {
     navigate(`/photo/${photo.id}`);
   };
   return (
-    <li onClick={handleClick}>
+    <li onClick={handleClick} className={styles["list-item"]}>
       <img src={photo.urls.small_s3} alt={photo.slug} className={styles.item} />
     </li>
   );

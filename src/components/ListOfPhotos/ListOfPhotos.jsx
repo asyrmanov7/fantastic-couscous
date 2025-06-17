@@ -119,10 +119,10 @@ export const ListOfPhotos = () => {
                 <PhotoItem key={photo.id} photo={photo} />
               )),
             )}
+            <div ref={loaderRef}>
+              {isFetchingNextSearchPage && <p>Загрузка ещё...</p>}
+            </div>
           </ul>
-          <div ref={loaderRef}>
-            {isFetchingNextSearchPage && <p>Загрузка ещё...</p>}
-          </div>
         </>
       ) : (
         <>
